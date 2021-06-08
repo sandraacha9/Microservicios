@@ -1,0 +1,4 @@
+org\ejemplo\microservicios\data\entity\Order.class
+org\ejemplo\microservicios\data\repository\OrdersRepository.class
+org\ejemplo\microservicios\data\entity\Country.class
+org\ejemplo\microservicios\data\repository\CountryRepository.class

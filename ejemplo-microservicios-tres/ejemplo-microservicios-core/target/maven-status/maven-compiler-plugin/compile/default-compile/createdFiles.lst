@@ -1,0 +1,5 @@
+org\ejemplo\microservicios\core\dto\CountryDto.class
+org\ejemplo\microservicios\core\controller\OrdersController.class
+org\ejemplo\microservicios\core\dto\OrderDto.class
+org\ejemplo\microservicios\core\App.class
+org\ejemplo\microservicios\core\service\OrdersService.class

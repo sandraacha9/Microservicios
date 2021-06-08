@@ -1,0 +1,1 @@
+java -jar ejemplo-microservicios-tres-core-1.0.0-SNAPSHOT.jar

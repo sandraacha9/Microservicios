@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ejemplo.microservicios.cuatro</groupId>
+	<artifactId>ejemplo-microservicios-cuatro-target</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>ejemplo-microservicios-target</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<ejemplo.core.version>1.0.0-SNAPSHOT</ejemplo.core.version>
+		<ejemplo.api.version>1.0.0-SNAPSHOT</ejemplo.api.version>
+		<junit.version>3.8.1</junit.version>
+		<maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.ejemplo.microservicios.cuatro</groupId>
+			<artifactId>ejemplo-microservicios-cuatro-core</artifactId>
+			<version>${ejemplo.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ejemplo.microservicios.cuatro</groupId>
+			<artifactId>ejemplo-microservicios-cuatro-data</artifactId>
+			<version>${ejemplo.api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<!-- Construcción -->
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>${maven-assembly-plugin.version}</version>
+				<!-- En la configuración indicamos que el nombre no tenga el id de assembly, 
+					y donde encontrar el descriptor -->
+				<configuration>
+					<appendAssemblyId>false</appendAssemblyId>
+					<descriptors>
+						<descriptor>src/main/resources/assembly.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<!-- Asocia la ejecución de assembly a la fase package -->
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

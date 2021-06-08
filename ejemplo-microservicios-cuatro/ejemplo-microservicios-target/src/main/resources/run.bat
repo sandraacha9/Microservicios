@@ -1,0 +1,1 @@
+java -jar ejemplo-microservicios-cuatro-core-1.0.0-SNAPSHOT.jar

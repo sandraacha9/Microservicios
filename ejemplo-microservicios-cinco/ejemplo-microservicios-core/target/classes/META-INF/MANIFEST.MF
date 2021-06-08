@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: ejemplo-microservicios-core
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: sebastian.fiore
+Implementation-Vendor-Id: com.ejemplo.microservicios.cinco
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+
